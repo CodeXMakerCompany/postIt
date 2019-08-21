@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
+    protected $table = 'user';
     /**
      * The attributes that are mass assignable.
      *
@@ -36,4 +36,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    //Relacion de one a many
+    public function images() {
+        return $this->hasMany('App\Image');
+    }
+
 }
