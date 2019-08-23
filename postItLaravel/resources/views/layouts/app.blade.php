@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -49,9 +50,16 @@
                                 </li>
                             @endif
                         @else
-                        <li class="nav-item"><a href="" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Inicio</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Subir Imagen</a></li>
-                        <li><a href=""></a></li>
+
+                        <li>
+                            <div class="img_icon_bar">
+                                <img src="{{ url('/user/avatar/'.Auth::user()->image) }}" class="rounded-circle img-thumbnail mx-auto d-block" alt="Carga tu imagen">
+                            </div>
+                            </li>
+                        <li>&nbsp;</li>
+                        
                         <li><a href=""></a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
