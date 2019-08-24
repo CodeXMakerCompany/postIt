@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Welcom! we missed U
+                    Welcome! we missed U
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                             @endif
                         @else
                         <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Subir Imagen</a></li>
+                        <li class="nav-item"><a href="{{ route('image.create') }}" class="nav-link">Subir Imagen</a></li>
 
                         <li>
                             <div class="img_icon_bar">
