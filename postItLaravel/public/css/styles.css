@@ -75,3 +75,17 @@
 .pub_image_details .comments {
 	padding: 20px;
 }
+
+.likes .number_likes{
+	color: gray;
+	font-size: 12px;
+}
+
+/*profile*/
+
+.data-user{
+	margin-bottom: 20px;
+}
+.data-user .img_profile img{
+	width: 80%;
+}
